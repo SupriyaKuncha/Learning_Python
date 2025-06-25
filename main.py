@@ -35,8 +35,16 @@ float = 23.2
 float = int(float)
 print(f"float is type casted to {type(float)}")
 boolean = True
-#input
+#input : A function that prompts user to enter data and returns the entered data as string.
 fav_music = input("What is your fav music? ")
 print(f"{fav_music} is an excellent choice, you have great taste!")
 my_age = input("Enter your age..")
 print(f"age is of type {type(my_age)}")
+# print (my_age+1) TypeError: can only concatenate str (not "int") to str
+#input() take any value as string, even the number is considered as string. so if you want the numeric data to be considered as integer or float or any other data type, we need to type cast it.
+my_age=int(my_age)
+print("after type casting my_age from string to integer")
+print(f"next year you will be {my_age+1}")
+# directly typecasting the input , reduce lines and more readable.
+my_height=int(input("Enter your height? "))
+print (f"My height is {my_height} and is of type {type(my_height)}")
