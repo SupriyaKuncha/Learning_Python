@@ -1,2 +1,1 @@
-# Learning_Python
-Following BroCode video
+### learning python
